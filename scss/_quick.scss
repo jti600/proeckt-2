@@ -1,0 +1,10 @@
+@import "mixin";
+.quick {
+  @include flex-center-R;
+  margin-bottom: 151px;
+  .quick__text {
+    margin-right: 80px;
+  }
+  @include text;
+  @include btn_block;
+}

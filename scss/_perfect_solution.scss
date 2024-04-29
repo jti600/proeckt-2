@@ -1,0 +1,21 @@
+@import "mixin";
+.perfect_solution {
+  @include flex-center-R;
+  @include text;
+  @include btn_block;
+  margin-bottom: 164px;
+  .quick__text {
+    margin-right: 67px;
+    h3 {
+      width: 364px;
+    }
+    p {
+      width: 301px;
+      @include poppins-300;
+      text-align: start;
+    }
+  }
+  .quick__text__btn__get {
+    margin-right: 7px;
+  }
+}

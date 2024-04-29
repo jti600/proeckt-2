@@ -1,0 +1,108 @@
+@import "mixin";
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  .main {
+    width: 100vw;
+    background: linear-gradient(230.95deg, #cb1ae8 -0.37%, #37bda6 100%);
+  }
+  .header-section {
+    margin: 0 150px 109px 150px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .nav {
+    width: 100%;
+    &__list {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &__item {
+        margin-right: 31px;
+        list-style-type: none;
+        font-family: "poppins";
+        font-weight: 400;
+        font-size: 15px;
+        color: #fff;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .nav__btn {
+    button {
+      @include btn;
+      @include poppins-500;
+      color: #ffffff;
+      width: 153px;
+      box-shadow: 0px 4px 31px 0px #00000026;
+      background-color: rgba(195, 40, 210, 0);
+      border-color: #fff;
+      &:hover {
+        background-color: rgba(195, 40, 210, 0.6);
+      }
+    }
+  }
+  .main-section {
+    @include flex-center;
+    h1 {
+      width: 631px;
+      margin-bottom: 17px;
+      @include poppins-900;
+      font-size: 55px;
+      color: #fff;
+    }
+    p {
+      margin-bottom: 71px;
+      @include poppins-800;
+      font-size: 16px;
+      color: #e5e5e5;
+    }
+  }
+  .main-section__btn {
+    @include flex-center-R;
+    margin-bottom: 101px;
+    &__get {
+      width: 184px;
+      @include btn;
+      @include poppins-500;
+      color: #112d57;
+      box-shadow: 0px 4px 31px 0px #00000026;
+      background-color: #fff;
+      margin-right: 13px;
+      border: 1px solid #fff;
+
+      &:hover {
+        background: rgba($color: #000000, $alpha: 0);
+      }
+    }
+    &__try {
+      @include btn;
+      @include poppins-500;
+      color: #fff;
+      box-shadow: 0px 4px 31px 0px #00000026;
+      background: rgba($color: #bd1590, $alpha: 0);
+      &:hover {
+        background: rgba($color: #bd1590, $alpha: 1);
+      }
+    }
+  }
+  .main-foto {
+    @include flex-center-R;
+    padding-bottom: 85px;
+
+    img {
+      box-shadow: -3px -35px 0 -16px rgba(231, 230, 230, 0.1202),
+        -4px -64px 0 -29px rgba(231, 230, 230, 0.1202);
+
+      border-radius: 5px;
+    }
+  }
+}

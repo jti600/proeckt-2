@@ -1,0 +1,118 @@
+@import "mixin";
+.simpel {
+  @include flex-center;
+  margin-bottom: 134px;
+  h2 {
+    @include poppins-500;
+    font-size: 46px;
+    margin-bottom: 30px;
+  }
+  p {
+    @include poppins-300;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 63px;
+    color: #5c5c5c;
+  }
+  .simpel-contener {
+    @include flex-center-R;
+
+    &__wrapper {
+      @include flex-center;
+      border: 1px solid #dedede;
+      border-radius: 10px;
+      background-color: #ffffff;
+      padding: 40px;
+      margin-right: 33px;
+
+      &:nth-child(2n) {
+        li {
+          &:nth-child(4n) {
+            color: #000;
+          }
+        }
+      }
+
+      &:last-child {
+        margin-right: 0;
+        li {
+          &:nth-child(2n) {
+            color: #000;
+          }
+          &:nth-child(2n + 1) {
+            color: #000;
+          }
+        }
+      }
+      h3 {
+        @include poppins-500;
+        font-size: 30px;
+        margin-bottom: 0;
+      }
+      p {
+        color: #5c5c5c;
+        font-size: 12px;
+        margin-bottom: 30px;
+      }
+      img {
+        margin-bottom: 30px;
+      }
+      .monet {
+        margin-bottom: 30px;
+        @include flex-center-R;
+        span {
+          @include poppins-900;
+          color: #30d7ba;
+          font-size: 55px;
+          margin-right: 5px;
+        }
+        .monet_block {
+          display: flex;
+          flex-direction: column;
+
+          span {
+            display: block;
+            font-size: 30px;
+            text-align: left;
+
+            &:last-child {
+              font-size: 12px;
+              color: #5c5c5c;
+            }
+          }
+        }
+      }
+      ul {
+        margin-bottom: 30px;
+        li {
+          list-style-type: none;
+          @include poppins-300;
+          font-size: 15px;
+          margin-bottom: 20px;
+          &:nth-child(4n) {
+            color: #5c5c5c;
+          }
+          &:nth-child(5n) {
+            color: #5c5c5c;
+          }
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+      button {
+        @include btn;
+        width: 251px;
+        background-color: #03d6f3;
+        border: #03d6f3;
+        color: #fff;
+      }
+    }
+  }
+}
+.plak {
+  margin: 0 auto;
+  width: 868px;
+  border: 1px solid #cdcdcd;
+  margin-bottom: 113px;
+}

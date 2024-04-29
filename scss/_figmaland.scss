@@ -1,0 +1,75 @@
+@import "mixin";
+.figmaland {
+  @include flex-center;
+  h2 {
+    @include poppins-500;
+    width: 765px;
+    margin-top: 111px;
+    font-size: 46px;
+    color: #000;
+  }
+  .figmaland__contener {
+    padding-top: 87px;
+    margin-bottom: 189px;
+    @include flex-center-R;
+
+    &__block {
+      border: 1px solid #dedede;
+      box-shadow: 0px 4px 31px 0px #00000026;
+      border-radius: 10px;
+      background-color: #fff;
+      padding: 40px 50px;
+      width: 401px;
+      height: 440px;
+      box-sizing: border-box;
+      margin-right: 31px;
+      &:last-child {
+        margin-right: 0;
+      }
+      &:nth-child(2n) {
+        background: linear-gradient(230.95deg, #cb1ae8 -0.37%, #37bda6 100%);
+        border: 1px solid #dedede;
+        box-shadow: 0px 4px 31px 0px #00000026;
+
+        h3 {
+          color: #fff;
+        }
+        p {
+          color: #fff;
+        }
+        a {
+          color: #fff;
+          &:hover {
+            color: red;
+          }
+        }
+      }
+      img {
+        margin-bottom: 10px;
+      }
+      h3 {
+        margin-bottom: 20px;
+        @include poppins-800;
+        text-align: start;
+        font-size: 30px;
+      }
+      p {
+        margin-bottom: 20px;
+        @include poppins-300;
+        text-align: start;
+        font-size: 18px;
+        color: #5c5c5c;
+      }
+      a {
+        text-decoration: none;
+        @include poppins-300;
+        text-align: start;
+        font-size: 15px;
+        color: #03d6f3;
+        &:hover {
+          color: red;
+        }
+      }
+    }
+  }
+}

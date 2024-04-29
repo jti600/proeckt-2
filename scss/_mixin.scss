@@ -1,0 +1,95 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@mixin flex-center-R {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin poppins-300 {
+  font-family: "poppins";
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+}
+@mixin poppins-500 {
+  font-family: "poppins";
+  text-align: center;
+  font-weight: 500;
+  font-style: normal;
+}
+@mixin poppins-800 {
+  font-family: " poppins";
+  text-align: center;
+  font-weight: 800;
+  font-style: normal;
+}
+@mixin poppins-700i {
+  font-family: "poppins";
+  text-align: center;
+  font-weight: 700;
+  font-style: italic;
+}
+@mixin poppins-800i {
+  font-family: "poppins";
+  text-align: center;
+  font-weight: 800;
+  font-style: italic;
+}
+@mixin poppins-900 {
+  font-family: "poppins";
+  font-weight: 900;
+  text-align: center;
+}
+@mixin btn {
+  border: 1px solid;
+  border-radius: 39px;
+  padding: 18px 46px 18px 46px;
+}
+@mixin text {
+  h3 {
+    @include poppins-500;
+    font-size: 46px;
+    text-align: start;
+  }
+  p {
+    @include poppins-500;
+    width: 480px;
+    font-size: 16px;
+    text-align: start;
+    color: #5c5c5c;
+    margin-bottom: 36px;
+  }
+}
+@mixin btn_block {
+  .quick__text__btn {
+    &__get {
+      @include btn;
+      @include poppins-500;
+      font-size: 16px;
+      width: 216px;
+      box-shadow: 0px 4px 31px 0px #00000026;
+      background: #03d6f3;
+      margin-right: 22px;
+      color: #fff;
+      &:hover {
+        background-color: rgba(195, 40, 210, 0.6);
+      }
+    }
+    &__try {
+      @include btn;
+      @include poppins-500;
+      font-size: 16px;
+      width: 216px;
+      border: 1px solid #30d7ba;
+      box-shadow: 0px 4px 31px 0px #00000026;
+      color: #30d7ba;
+      &:hover {
+        background-color: rgba(195, 40, 210, 0.6);
+      }
+    }
+  }
+}

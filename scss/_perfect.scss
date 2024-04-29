@@ -1,0 +1,16 @@
+@import "mixin";
+.perfect {
+  @include flex-center-R;
+  @include text;
+  margin-bottom: 214px;
+  .quick__foto {
+    margin-right: 80px;
+  }
+  .quick__text {
+    margin-bottom: 119px;
+  }
+  h3 {
+    width: 524px;
+  }
+  @include btn_block;
+}
