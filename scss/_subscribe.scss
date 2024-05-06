@@ -1,0 +1,38 @@
+@import "mixin";
+.subscribe {
+  @include flex-center;
+  h2 {
+    @include poppins-500;
+    font-size: 46px;
+    margin-bottom: 34px;
+  }
+  p {
+    @include poppins-300;
+    font-size: 18px;
+    margin-bottom: 69px;
+  }
+  .subscribe-form {
+    margin-bottom: 113px;
+    input {
+      border: 1px solid #d0d0d0;
+      border-radius: 6px;
+      width: 284px;
+      background-color: #efefef;
+      height: 52px;
+      margin-right: 10px;
+      &::placeholder {
+        color: #000;
+        text-align: center;
+        font-size: 15px;
+      }
+    }
+    button {
+      @include btn;
+
+      color: #ffff;
+      font-style: 16px;
+      box-shadow: 0px 4px 31px 0px #00000026;
+      background-color: #03d6f3;
+    }
+  }
+}
